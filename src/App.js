@@ -7,12 +7,12 @@ import MySet from "./components/MySet"
 import Dictionary from "./components/Dictionary"
 import Array from "./components/Array"
 import Object from "./components/Object"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 
 const App=() =>{
   return (
-    <Router>
+    <BrowserRouter>
      <Routes>
        <Route exact path="/" Component={Home} />
        <Route exact path="/list" Component={List}/>
@@ -23,7 +23,7 @@ const App=() =>{
        <Route exact path="/object" Component={Object}/>
      </Routes>
         
-    </Router>
+    </BrowserRouter>
     
   );
 }
